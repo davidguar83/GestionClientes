@@ -65,7 +65,7 @@ public class Tarefa1 {
                     System.out.println("Datos cliente = " + i);
 
                     System.out.println("NIF: ");
-                    nif = sc.nextLine();
+                    nif = sc.next();
 
                     for (int j = 0; j < listaClientes.size(); j++) {
 
@@ -82,10 +82,10 @@ public class Tarefa1 {
 
                 if (b == false) {
                     System.out.print("Nombre: ");
-                    nome = sc.nextLine();
+                    nome = sc.next();
 
                     System.out.print("Direccion: ");
-                    direccion = sc.nextLine();
+                    direccion = sc.next();
 
                     System.out.print("Telefono: ");
                     telefono = sc.nextInt();
