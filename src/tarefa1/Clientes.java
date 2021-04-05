@@ -6,15 +6,28 @@
  */
 package tarefa1;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 
 
 /**
  *
  * @author David
  */
-public class Clientes {
+
+@Entity
+public class Clientes implements Serializable{
     
-    private String nif,nome,direccion;
+    private static final long serialVersionUID = 1L;
+    
+    @Id
+    
+    private String nif;
+    
+    private String nome,direccion;
     private int telefono,debeda;
 
     public Clientes() {
